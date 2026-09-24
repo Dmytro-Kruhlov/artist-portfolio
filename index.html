@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Имя Фамилия — иллюстратор</title>
+  <meta name="description" content="Портфолио иллюстратора и графического дизайнера: персонажи, стикеры, афиши, айдентика.">
+  <meta property="og:title" content="Имя Фамилия — иллюстратор">
+  <meta property="og:description" content="Персонажи, стикеры, афиши и немного магии.">
+  <meta property="og:image" content="assets/img/bunny-wine.webp">
+  <meta name="theme-color" content="#FBF6EE">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;800;900&family=Manrope:wght@400;500;600;700&family=Caveat:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="cursor" aria-hidden="true"><span></span></div>
+
+  <!-- NAV -->
+  <header class="nav">
+    <a href="#top" class="nav__logo" aria-label="Наверх">
+      <span class="tri tri--coral"></span><span class="tri tri--teal"></span><span class="tri tri--sun"></span>
+      <b data-i18n="name.short">Имя</b>
+    </a>
+    <nav class="nav__links">
+      <a href="#works" data-i18n="nav.works">Работы</a>
+      <a href="#process" data-i18n="nav.process">Процесс</a>
+      <a href="#about" data-i18n="nav.about">Обо мне</a>
+      <a href="#contact" data-i18n="nav.contact">Контакты</a>
+    </nav>
+    <div class="lang" role="group" aria-label="Language">
+      <button data-lang="ru">RU</button><button data-lang="de">DE</button><button data-lang="en">EN</button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <svg class="bunting" viewBox="0 0 1200 90" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0 8 Q600 70 1200 8" fill="none" stroke="#1C1A2E" stroke-width="1.5" opacity=".35"/>
+    </svg>
+    <div class="flags" aria-hidden="true"></div>
+
+    <div class="hero__text">
+      <p class="pill reveal"><span class="dot"></span><span data-i18n="hero.status">Открыта для заказов</span></p>
+      <h1 class="hero__title">
+        <span class="line"><span data-i18n="name.first">Имя</span></span>
+        <span class="line line--outline"><span data-i18n="name.last">Фамилия</span></span>
+      </h1>
+      <p class="hero__role reveal" data-i18n-html="hero.role">Иллюстратор, <em>дизайнер персонажей</em> и графический дизайнер</p>
+      <p class="hero__lead reveal" data-i18n="hero.lead">Рисую милых персонажей, стикеры и афиши, которые хочется разглядывать.</p>
+      <div class="hero__cta reveal">
+        <a href="#works" class="btn btn--ink" data-i18n="hero.cta1">Смотреть работы</a>
+        <a href="#contact" class="btn btn--ghost" data-i18n="hero.cta2">Написать мне</a>
+      </div>
+    </div>
+
+    <div class="hero__art" aria-label="Коллаж работ">
+      <figure class="sticker" style="--x:6%;--y:6%;--r:-8deg;--w:44%;--d:0s"><img src="assets/img/undertaker-sm.webp" alt="" draggable="false"></figure>
+      <figure class="sticker" style="--x:50%;--y:0%;--r:6deg;--w:46%;--d:.4s"><img src="assets/img/bunny-wine-sm.webp" alt="" draggable="false"></figure>
+      <figure class="sticker" style="--x:0%;--y:48%;--r:5deg;--w:40%;--d:.8s"><img src="assets/img/purple-throne-sm.webp" alt="" draggable="false"></figure>
+      <figure class="sticker" style="--x:38%;--y:44%;--r:-4deg;--w:58%;--d:1.2s"><img src="assets/img/pennywise-duck-sm.webp" alt="" draggable="false"></figure>
+      <div class="badge" aria-hidden="true">
+        <svg viewBox="0 0 200 200">
+          <defs><path id="circ" d="M100,100 m-72,0 a72,72 0 1,1 144,0 a72,72 0 1,1 -144,0"/></defs>
+          <text><textPath href="#circ">PORTFOLIO ✦ MY WORK ✦ PORTFOLIO ✦ MY WORK ✦</textPath></text>
+        </svg>
+        <span>✦</span>
+      </div>
+      <p class="hint" data-i18n="hero.hint">↖ потаскай меня</p>
+    </div>
+
+    <a href="#works" class="scroll-cue" aria-label="Вниз"><span></span></a>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span data-i18n="marquee">Иллюстрации ✦ Персонажи ✦ Стикеры ✦ Афиши ✦ Айдентика ✦ Чиби ✦</span>
+      <span data-i18n="marquee">Иллюстрации ✦ Персонажи ✦ Стикеры ✦ Афиши ✦ Айдентика ✦ Чиби ✦</span>
+      <span data-i18n="marquee">Иллюстрации ✦ Персонажи ✦ Стикеры ✦ Афиши ✦ Айдентика ✦ Чиби ✦</span>
+    </div>
+  </div>
+
+  <!-- WORKS -->
+  <section class="section works" id="works">
+    <div class="section__head">
+      <p class="eyebrow">01</p>
+      <h2 class="h2 reveal" data-i18n-html="works.title">Избранные <em>работы</em></h2>
+    </div>
+    <div class="filters reveal" role="tablist">
+      <button class="chip is-active" data-filter="all"><span data-i18n="f.all">Все</span> <sup></sup></button>
+      <button class="chip" data-filter="illustration"><span data-i18n="f.illustration">Иллюстрации</span> <sup></sup></button>
+      <button class="chip" data-filter="stickers"><span data-i18n="f.stickers">Стикеры</span> <sup></sup></button>
+      <button class="chip" data-filter="character"><span data-i18n="f.character">Персонажи</span> <sup></sup></button>
+      <button class="chip" data-filter="design"><span data-i18n="f.design">Графдизайн</span> <sup></sup></button>
+    </div>
+    <div class="grid" id="grid"></div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="section process" id="process">
+    <div class="section__head">
+      <p class="eyebrow">02</p>
+      <h2 class="h2 reveal" data-i18n-html="process.title">От наброска <em>до финала</em></h2>
+      <p class="section__lead reveal" data-i18n="process.lead">Потяни ползунок и посмотри, как линии превращаются в готового персонажа.</p>
+    </div>
+
+    <div class="compare-row">
+      <div class="compare reveal" style="--ratio:1112/1484">
+        <img src="assets/img/cat-final.webp" alt="" loading="lazy">
+        <div class="compare__before"><img src="assets/img/cat-sketch.webp" alt="" loading="lazy"></div>
+        <span class="compare__tag compare__tag--l" data-i18n="process.sketch">Скетч</span>
+        <span class="compare__tag compare__tag--r" data-i18n="process.final">Финал</span>
+        <div class="compare__handle"><span>⟷</span></div>
+        <input type="range" min="0" max="100" value="50" aria-label="Before / after">
+      </div>
+      <div class="compare reveal" style="--ratio:1401/1047">
+        <img src="assets/img/chest-final.webp" alt="" loading="lazy">
+        <div class="compare__before"><img src="assets/img/chest-lineart.webp" alt="" loading="lazy"></div>
+        <span class="compare__tag compare__tag--l" data-i18n="process.lineart">Лайн</span>
+        <span class="compare__tag compare__tag--r" data-i18n="process.final">Финал</span>
+        <div class="compare__handle"><span>⟷</span></div>
+        <input type="range" min="0" max="100" value="50" aria-label="Before / after">
+      </div>
+    </div>
+
+    <div class="steps reveal">
+      <h3 class="h3" data-i18n="process.pumpkin">Тыквенный странник: этапы</h3>
+      <ol class="steps__list">
+        <li><figure><img src="assets/img/pumpkin-sketch-sm.webp" alt="" loading="lazy"></figure><span>1</span><p data-i18n="process.s1">Скетч и силуэт</p></li>
+        <li><figure><img src="assets/img/pumpkin-variants-sm.webp" alt="" loading="lazy"></figure><span>2</span><p data-i18n="process.s2">Подбор палитры</p></li>
+        <li><figure><img src="assets/img/pumpkin-final-sm.webp" alt="" loading="lazy"></figure><span>3</span><p data-i18n="process.s3">Свет и детали</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section services">
+    <div class="section__head">
+      <p class="eyebrow">03</p>
+      <h2 class="h2 reveal" data-i18n-html="services.title">Что я <em>могу</em> для вас</h2>
+    </div>
+    <div class="cards">
+      <article class="card card--coral reveal">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="18" fill="none" stroke="currentColor" stroke-width="3"/><circle cx="18" cy="21" r="2.5"/><circle cx="30" cy="21" r="2.5"/><path d="M17 29q7 6 14 0" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>
+        <h3 data-i18n="s1.t">Персонажи и чиби</h3><p data-i18n="s1.d">Персонажи для игр, брендов и подарков: от скетча до финального рендера.</p>
+      </article>
+      <article class="card card--teal reveal">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 8h32v20L28 40H8z" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/><path d="M28 40V28h12" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/></svg>
+        <h3 data-i18n="s2.t">Стикерпаки</h3><p data-i18n="s2.d">Сезонные наборы и мерч: Хэллоуин, осень, праздники.</p>
+      </article>
+      <article class="card card--sun reveal">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><rect x="10" y="6" width="28" height="36" rx="3" fill="none" stroke="currentColor" stroke-width="3"/><path d="M16 16h16M16 23h16M16 30h9" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>
+        <h3 data-i18n="s3.t">Афиши и плакаты</h3><p data-i18n="s3.d">Концерты, праздники, события. Яркие и понятные с первого взгляда.</p>
+      </article>
+      <article class="card card--lilac reveal">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><rect x="5" y="12" width="38" height="24" rx="4" fill="none" stroke="currentColor" stroke-width="3"/><circle cx="16" cy="24" r="5" fill="none" stroke="currentColor" stroke-width="3"/><path d="M26 21h11M26 28h7" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>
+        <h3 data-i18n="s4.t">Визитки и айдентика</h3><p data-i18n="s4.d">Логотипы, визитки, этикетки и баннеры для малого бизнеса.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section about" id="about">
+    <div class="about__photo reveal">
+      <div class="about__frame">
+        <!-- ЗАГЛУШКА: заменить на <img src="assets/img/me.webp" alt="..."> -->
+        <span class="about__initials" data-i18n="name.initials">ИФ</span>
+        <span class="about__note" data-i18n="about.photo">тут будет фото</span>
+      </div>
+      <span class="about__sticker">hi!</span>
+    </div>
+    <div class="about__text">
+      <p class="eyebrow">04</p>
+      <h2 class="h2 reveal" data-i18n-html="about.title">Привет, я <em>Имя</em></h2>
+      <p class="reveal" data-i18n="about.p1">[Заглушка] Пара предложений о себе: откуда ты, чем вдохновляешься, что любишь рисовать больше всего.</p>
+      <p class="reveal" data-i18n="about.p2">[Заглушка] Где училась, с кем работала, какие проекты было особенно интересно делать.</p>
+      <ul class="tools reveal">
+        <li>Procreate</li><li>Photoshop</li><li>Illustrator</li><li>Clip Studio</li><li data-i18n="about.more">[инструменты уточнить]</li>
+      </ul>
+      <dl class="facts reveal">
+        <div><dt data-count="auto">0</dt><dd data-i18n="about.f1">работ в портфолио</dd></div>
+        <div><dt>3</dt><dd data-i18n="about.f2">направления</dd></div>
+        <div><dt>RU · UA · DE</dt><dd data-i18n="about.f3">языки [уточнить]</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="flags flags--bottom" aria-hidden="true"></div>
+    <p class="eyebrow eyebrow--light">05</p>
+    <h2 class="contact__title reveal" data-i18n-html="contact.title">Давай создадим <em>что-то милое</em>?</h2>
+    <a class="contact__mail reveal" href="mailto:hello@example.com">hello@example.com <span>↗</span></a>
+    <ul class="socials reveal">
+      <li><a href="#" target="_blank" rel="noopener">Instagram</a></li>
+      <li><a href="#" target="_blank" rel="noopener">Telegram</a></li>
+      <li><a href="#" target="_blank" rel="noopener">Behance</a></li>
+      <li><a href="#" target="_blank" rel="noopener">ArtStation</a></li>
+    </ul>
+    <footer class="footer">
+      <span>© <span id="year"></span> <span data-i18n="name.full">Имя Фамилия</span></span>
+      <span data-i18n="footer">Все работы защищены авторским правом</span>
+    </footer>
+  </section>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" hidden>
+    <button class="lb__close" aria-label="Close">✕</button>
+    <button class="lb__nav lb__prev" aria-label="Prev">←</button>
+    <figure class="lb__fig"><img alt=""><figcaption></figcaption></figure>
+    <button class="lb__nav lb__next" aria-label="Next">→</button>
+  </div>
+
+  <script src="assets/js/content.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
